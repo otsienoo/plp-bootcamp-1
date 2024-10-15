@@ -1,0 +1,26 @@
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /*allign contents horizontally*/
+}
+
+.flex-item{
+    flex: 1 1 30%;
+    padding: 10px;
+    background-color: aqua;
+    margin: 5px;
+}
+
+@media (max-width: 768){
+    .flex-item{
+        flex: 1 1 45%; /*2 items on each line/row*/
+    }
+
+}
+
+@media (max-width:480px){
+    .flex-item{
+        flex: 1 1 100%; /*1 item in each row*/
+    }
+
+}
